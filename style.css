@@ -8,27 +8,27 @@
 
 header {
   font-family: Helvetica, sans-serif;
-  color: #6C3483;
+  color: #2471A3;
   background: white;
   text-align: center;
   padding: 30px;
 }
 
 main {
-  background: #D2B4DE;
+  background: #A9CCE3;
   text-align: center;
 }
 
 main h2 {
   padding-top: 20px;
   padding-bottom: 1Opx;
-  color: #6C3483;
+  color: #2471A3;
 }
 
 footer {
   text-align: center;
   padding: 20px 0;
-  color: #6C3483;
+  color: #2471A3;
   background: white;
 }
 
@@ -41,16 +41,17 @@ footer {
 }
 
 #start-button {
-  background: lightgray;
+  background: #F2F3F4;
+  color: #2471A3;
   padding: 10px 15px;
   margin: 20px 0;
-  border: 2px solid #6C3483;
+  border: 2px solid #2471A3;
   border-radius: 5px;
   font-size: 14px;
   transition: all 0.3s ease;
 }
 #start-button:hover {
-  background: #E8DAEF;
+  background: #EBF5FB;
   cursor: pointer;
 }
 
@@ -59,8 +60,8 @@ footer {
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #D0D3D4;
-  border: 2px solid #6C3483;
+  background-color: #F2F3F4;
+  border: 2px solid #2471A3;
   border-radius: 5px;
 }
 
@@ -79,8 +80,8 @@ footer {
   height: 80px;
   display: flex;
   flex-wrap: wrap;
-  background-color: #D0D3D4;
-  border: 2px solid #6C3483;
+  background-color: #F2F3F4;
+  border: 2px solid #2471A3;
   border-radius: 5px;
 }
 
