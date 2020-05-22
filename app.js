@@ -8,13 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let nextRandom = 0
   let timerId
   let score = 0
-  const shadow = 'inset 2px 2px 2px white, 2px 2px 2px gray'
   const colors = [
-    'orange',
-    'red',
-    'purple',
-    'green',
-    'blue'
+    '#FEC5A4',//orange
+    '#FFB3DD',//red
+    '#D7B8FA',//purple
+    '#6FF7C8',//green
+    '#B8CEFA'//blue
   ]
 
   // The Tetrominoes
@@ -67,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     current.forEach(index => {
       squares[currentPosition + index].classList.add('tetromino')
       squares[currentPosition + index].style.backgroundColor = colors[random]
-      squares[currentPosition + index].style.boxShadow = shadow
     })
   }
   draw()
@@ -77,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
     current.forEach(index => {
       squares[currentPosition + index].classList.remove('tetromino')
       squares[currentPosition + index].style.backgroundColor = ''
-      squares[currentPosition + index].style.boxShadow = ''
     })
   }
 
@@ -172,12 +169,10 @@ document.addEventListener('DOMContentLoaded', () => {
     displaySquares.forEach(square => {
       square.classList.remove('tetromino')
       square.style.backgroundColor = ''
-      square.style.boxShadow = ''
     })
     upNextTetrominoes[nextRandom].forEach(index => {
       displaySquares[displayIndex + index].classList.add('tetromino')
       displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom]
-      displaySquares[displayIndex + index].style.boxShadow = shadow
     })
   }
 
@@ -206,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
           squares[index].classList.remove('taken')
           squares[index].classList.remove('tetromino')
           squares[index].style.backgroundColor = ''
-          squares[index].style.boxShadow = ''
         })
         const squaresRemoved = squares.splice(i, width)
         squares = squaresRemoved.concat(squares)
